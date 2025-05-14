@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two Column Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .left-column {
+      width: 250px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+      flex-shrink: 0;
+    }
+
+    .left-column h1 {
+      margin-top: 0;
+    }
+
+    .left-column img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      margin-top: 20px;
+    }
+
+    .right-column {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-column">
+    <h1>Your Name</h1>
+    <img src="https://via.placeholder.com/150" alt="Profile Image">
+  </div>
+  <div class="right-column">
+    <h2>Scrollable Content</h2>
+    <p>Here is some scrollable content. Add more paragraphs or content to test the scroll behavior.</p>
+    <!-- Repeat content to demonstrate scrolling -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+    <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+    <p>Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor.</p>
+    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Maecenas faucibus mollis interdum.</p>
+    <p>Sed posuere consectetur est at lobortis.</p>
+    <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>And so on...</p>
+  </div>
+</body>
+</html>
