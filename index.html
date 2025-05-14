@@ -2,24 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Centered Two Column Layout</title>
+  <title>Two Column Layout</title>
   <style>
-    html, body {
-      height: 100%;
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
-      /*align-items: center; */      /* vertical centering */
-      justify-content: center;   /* horizontal centering */
-      background-color: #eaeaea; /* optional: gray background */
-    }
-
-    .container {
-      display: flex;
-      height: 600px;       /* set a fixed height or use max-height */
-      width: 900px;        /* set a fixed width */
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      background-color: white;
+      height: 100vh;
+      justify-content: center;
+      overflow: hidden;
     }
 
     .left-column {
@@ -28,6 +19,7 @@
       padding: 20px;
       box-sizing: border-box;
       border-right: 1px solid #ccc;
+      flex-shrink: 0;
     }
 
     .left-column h1 {
@@ -51,24 +43,25 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="left-column">
-      <h1>Your Name</h1>
-      <img src="https://via.placeholder.com/150" alt="Profile Image">
-    </div>
-    <div class="right-column">
-      <h2>Scrollable Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-      <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
-      <p>Vestibulum id ligula porta felis euismod semper.</p>
-      <p>Curabitur blandit tempus porttitor.</p>
-      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-      <p>Maecenas faucibus mollis interdum.</p>
-      <p>Sed posuere consectetur est at lobortis.</p>
-      <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
-    </div>
+  <div class="left-column">
+    <h1>Your Name</h1>
+    <img src="https://via.placeholder.com/150" alt="Profile Image">
+  </div>
+  <div class="right-column">
+    <h2>Scrollable Content</h2>
+    <p>Here is some scrollable content. Add more paragraphs or content to test the scroll behavior.</p>
+    <!-- Repeat content to demonstrate scrolling -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+    <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+    <p>Vestibulum id ligula porta felis euismod semper.</p>
+    <p>Curabitur blandit tempus porttitor.</p>
+    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    <p>Maecenas faucibus mollis interdum.</p>
+    <p>Sed posuere consectetur est at lobortis.</p>
+    <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>And so on...</p>
   </div>
 </body>
 </html>
